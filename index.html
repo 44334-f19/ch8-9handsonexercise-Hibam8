@@ -1,13 +1,104 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 	<head> 
-		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
+		<title>Mahgoub Chapter8-9HandsOnExercise</title> 
 		<meta charset="utf-8"> 
 		<style>
-		
+		  table {margin: auto;
+                    border: 5px solid #000;
+                border-spacing: 0px;}
+            body {background-color: #ECE9E8 ;}
+            form {background-color: #FFC5B8;}
+            label {text-align: inline;}
+             #wrapper {display: flex;
+                        flex-direction: row;}
+            info {3;}
+            genre {3;}
+            time {3;}
+            @media screen and (max-width: 600px) {
+                wrapper {display: none;
+                        flex-direction: row;}
+            }
 		</style>
 	</head> 
 <body> 
-
+    <table>
+        <caption>Favorite Movie</caption>
+             <thead>
+                
+            </thead>
+    <tbody>
+        <tr>
+            <td headers="title">Title:</td>
+            <td headers="tname">Black Panther</td>
+        </tr>
+         <tr>
+            <td headers="director">Director: </td>
+            <td headers="dname">Ryan Coogler</td>
+        </tr>
+        <tr>
+            <td headers="actor">Leading Actors: </td>
+            <td headers="laname">Chadwick Aaron Boseman, Michael B. Jordan</td>
+        </tr>
+        <tr>
+            <td headers="actress">Leading Actresses:</td>
+            <td headers="lsname">Lupita Nyong'o, Danai Gurira, Ltitia Wright</td>
+        </tr>
+        <tr>
+            <td headers="rating">Rating:</td>
+            <td headers="r">PG-13</td>
+        </tr>
+        <tr>
+            <td headers="description">Description:</td>
+            <td headers="des">Black panther is a film about a man wanting to retuen home and calim his power to the throne. The two lead actors fight to get their right to the throne of a well developed hidden country in Africa. </td>
+        </tr>
+        <tr>
+            <td headers="review">Reviews:</td>
+            <td headers="rev"><a href="https://www.rottentomatoes.com/m/black_panther_2018">Click Here</a></td>
+        </tr>
+    </table>
+    <h2>Music Survey</h2>
+    <form method="post">
+    <div id="wrapper">
+    <fieldset id="info">
+        <legend>Personal Infromation </legend>
+                <label for="myName">Name:</label>
+                <input type="text" name="myName" id="myName" required="required" placeholder="your first and last name">
+        <br><br><br>
+                  <label for="myEmail">E-Mail:</label>
+                <input type="text" name="myEmail" id="myEmail" required="required" placeholder="you@yourdomain.com">
+    </fieldset>
+    <fieldset id="genre">
+        <legend>Favorite Music</legend>
+            Favorite Genre <br>
+                <input type="checkbox" name="genre" id="pop" value="pop"> Pop<br>
+                <input type="checkbox" name="genre" id="rap" value="rap"> Rap<br>
+                <input type="checkbox" name="genre" id="hh" value="hiphop"> Hip-Hop<br>
+                <input type="checkbox" name="genre" id="r&B" value="r&b"> R&B<br><br>
+        Select the one you listen too most: <br>
+                <input type="radio" name="myStatus" id="bc" value="beyonce"> Beyonce <br>
+                <input type="radio" name="myStatus" id="bm" value="bruno mars"> Bruno Mars<br>
+                <input type="radio" name="myStatus" id="d" value="drake"> Drake<br>
+                <input type="radio" name="myStatus" id="cb" value="chris brown">Chris Brown <br>
+    </fieldset>
+    <fieldset id="time">
+                <legend> Listening to Music</legend>
+                <label>On what device do you listen to most of your music: </label>
+                <select size="1" name="time" id="time">
+                    <option value="sele">Select One</option>    
+                    <option value="ipod">Ipod</option>    
+                    <option value="phone">Phone</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="laotop">Laptop</option>
+        </select>
+        <br>
+                <label for="hours"> How many hours do you spend listening to music a day: (1 -10):</label> <br>
+                    <input type="range" name="hours" id="hours" min="1" max="10"> <br> <br>
+    <input id="mySubmit" type="submit"value="Submit">
+    <input id="myReset" type="reset" value="Reset">
+    </fieldset>
+        </div>
+    </form>
 </body> 
+    <footer>Hiba Maghoub | <a href="Hibam8@gmail.com">Hibam8@gmail.com </a></footer>
 </html> 
